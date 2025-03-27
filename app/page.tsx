@@ -7,10 +7,12 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <div className="fixed inset-0 w-full h-screen">
-        <Particles quantity={150} />
+      <div className="relative min-h-screen">
+        <div className="fixed inset-0 w-full h-full min-h-screen">
+          <Particles quantity={150} />
+        </div>
+        <div className="relative z-10"><Hero1 /></div>
       </div>
-      <div className='z-1'><Hero1 /></div>
       <Story />
       <Solutions />
   </div>
