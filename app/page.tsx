@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <div className="relative min-h-screen">
-        <div className="fixed inset-0 w-full h-full min-h-screen">
+        <div className="fixed inset-0 w-full h-screen overflow-hidden">
           <Particles quantity={150} />
         </div>
         <div className="relative z-10"><Hero1 /></div>
