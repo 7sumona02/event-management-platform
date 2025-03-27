@@ -9,12 +9,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="description" content="Streamline your event planning process with EventPro" />
       </head>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <Providers>
           <div className="sticky inset-x-0 top-0 z-30 w-full border-b backdrop-blur-lg transition-all">
             <Navbar1/>
           </div>
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   )
@@ -24,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 import './globals.css'
 import { Navbar1 } from "@/components/navbar";
+import Providers from "@/components/providers";
 
 export const metadata = {
       generator: 'v0.dev'
